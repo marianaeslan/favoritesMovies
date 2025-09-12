@@ -1,5 +1,6 @@
 import MovieCard from "../components/Card";
 import SearchBar from "../components/SearchBar";
+import { CardGrid } from "../components/Card/styles";
 
 export default function Home() {
   const movies = [
@@ -12,11 +13,11 @@ export default function Home() {
   return (
     <div className="home">
       <SearchBar />
-      <div className="movies-grid">
+      <CardGrid>
         {movies.map((movie) => (
           <MovieCard key={movie.id} movie={movie} />
         ))}
-      </div>
+      </CardGrid>
     </div>
   );
 }

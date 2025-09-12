@@ -1,22 +1,28 @@
+import {
+  Card,
+  MoviePoster,
+  FavoriteBtn,
+  MovieOverlay,
+  MovieInfo,
+} from "./styles";
+
 export default function MovieCard({ movie }) {
   function onFavoriteClick() {
     alert("clicked");
   }
 
   return (
-    <div className="movie-card">
-      <div className="movie-poster">
+    <Card>
+      <MoviePoster>
         <img src={movie.url} alt={movie.title} />
-        <div className="movie-overlay">
-          <button className="favorite-btn" onClick={onFavoriteClick}>
-            🩷
-          </button>
-        </div>
-      </div>
-      <div className="movie-info">
+        <MovieOverlay>
+          <FavoriteBtn onClick={onFavoriteClick}>🩷</FavoriteBtn>
+        </MovieOverlay>
+      </MoviePoster>
+      <MovieInfo>
         <h3>{movie.title}</h3>
         <p>{movie.release}</p>
-      </div>
-    </div>
+      </MovieInfo>
+    </Card>
   );
 }
