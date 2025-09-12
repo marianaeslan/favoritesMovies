@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Form, Input, SearchButton } from "./styles";
 
-export default function SearchBar() {
-  const [SearchQuery, setSeacrhQuery] = useState("");
+export default function SearchBar({ onSearch, loading }) {
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleSearch = (e) => {
     e.preventDefault();
-    alert(SearchQuery);
-    setSeacrhQuery("");
+    if (!searchQuery.trim()) return;
+    if (loading) return;
+    onSearch(searchQuery);
   };
 
   return (
@@ -17,8 +18,9 @@ export default function SearchBar() {
           type="text"
           placeholder="Search for movies..."
           className="search-input"
-          value={SearchQuery}
-          onChange={(e) => setSeacrhQuery(e.target.value)}
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          disabled={loading}
         />
         <SearchButton type="submit" className="search-btn">
           Search
