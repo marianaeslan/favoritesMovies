@@ -1,4 +1,3 @@
-import MovieCard from "../Card";
 import Home from "../../pages/Home";
 import Favorites from "../../pages/Favorites/";
 import NavBar from "../Header";

@@ -25,7 +25,7 @@ export const NavbarLinks = styled.div`
   gap: 1rem;
 `;
 
-export const NavLink = styled(Link)`
+export const NavbarLink = styled(Link)`
   text-decoration: none;
   color: #ecefde;
   font-size: 1rem;

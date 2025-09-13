@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
-import { Navbar, NavbarBrand, NavbarLinks, NavLink } from "./styles";
+import { Navbar, NavbarBrand, NavbarLinks, NavbarLink } from "./styles";
 
 export default function NavBar() {
   return (
     <Navbar>
       <NavbarBrand>
-        <NavLink to="/">Movie App</NavLink>
+        <NavbarLink to="/">Movie App</NavbarLink>
       </NavbarBrand>
       <NavbarLinks>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/favorites">Favorites</NavLink>
+        <NavbarLink to="/">Home</NavbarLink>
+        <NavbarLink to="/favorites">Favorites</NavbarLink>
       </NavbarLinks>
     </Navbar>
   );
