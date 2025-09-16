@@ -16,7 +16,7 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
 
-  &:hover {
+  &.hover {
     transform: translateY(-5px);
     opacity: 1;
   }
@@ -51,11 +51,11 @@ export const FavoriteBtn = styled.button`
   transition: background-color 0.2s;
   cursor: pointer;
 
-  &:hover {
+  &.hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
 
-  &:active {
+  &.active {
     color: #ff4757;
   }
 `;

@@ -12,7 +12,6 @@ export default function Home() {
 
   const location = useLocation();
 
-  // Sempre que voltar para "/", recarrega populares
   useEffect(() => {
     if (location.pathname === "/") {
       const loadPopularMovies = async () => {

@@ -20,3 +20,7 @@ export const FavoritesEmpty = styled.div`
     line-height: 1.6;
   }
 `;
+
+export const H2 = styled.h2`
+  padding: 1rem 2rem;
+`;

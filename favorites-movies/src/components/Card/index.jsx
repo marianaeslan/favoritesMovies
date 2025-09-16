@@ -6,9 +6,19 @@ import {
   MovieInfo,
 } from "./styles";
 
+import { useMovieContext } from "../../contexts/MovieContext";
+
 export default function MovieCard({ movie }) {
-  function onFavoriteClick() {
-    alert("clicked");
+  const { isFavorite, addFavorite, removeFavorite } = useMovieContext();
+  const favorite = isFavorite(movie.id);
+
+  function onFavoriteClick(e) {
+    e.preventDefault();
+    if (favorite) {
+      removeFavorite(movie.id);
+    } else {
+      addFavorite(movie);
+    }
   }
 
   const imageUrl = movie.poster_path
@@ -29,7 +39,12 @@ export default function MovieCard({ movie }) {
           }}
         />
         <MovieOverlay>
-          <FavoriteBtn onClick={onFavoriteClick}>🩷</FavoriteBtn>
+          <FavoriteBtn
+            className={`favorite-btn ${favorite ? "active" : ""}`}
+            onClick={onFavoriteClick}
+          >
+            ♥
+          </FavoriteBtn>
         </MovieOverlay>
       </MoviePoster>
       <MovieInfo>
