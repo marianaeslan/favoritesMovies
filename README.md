@@ -28,12 +28,10 @@ O **Favorites Movies** é uma aplicação web que permite aos usuários criar e 
 ## ⚡ Funcionalidades
 
 - ✅ Adicionar filmes à lista de favoritos
-- ✅ Visualizar detalhes dos filmes (título, ano, gênero, sinopse, etc.)
-- ✅ Editar informações dos filmes
+- ✅ Visualizar detalhes dos filmes (título, ano)
 - ✅ Remover filmes da lista
 - ✅ Pesquisar filmes na coleção
-- ✅ Filtrar por gênero, ano ou avaliação
-- ✅ Interface responsiva para dispositivos móveis
+- ✅ Interface responsiva para dispositivos móveis(em andamento)
 - ✅ Armazenamento local dos dados
 
 ## 🛠 Tecnologias Utilizadas
