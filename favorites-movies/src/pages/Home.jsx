@@ -38,7 +38,7 @@ export default function Home() {
       setError(null);
     } catch (err) {
       console.log(err);
-      setError("Search failed...");
+      setError(err.message || "Search failed...");
     } finally {
       setLoading(false);
     }
