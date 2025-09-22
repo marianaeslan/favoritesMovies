@@ -1,6 +1,11 @@
 # 🎬 Favorites Movies
 
-Uma aplicação para gerenciar e organizar seus filmes favoritos, permitindo que você mantenha uma lista personalizada dos filmes que mais gosta.
+<div align="center">
+  <img src="/favorites-movies/assets/images/screenshot.png" alt="Screenshot do Projeto" width="100%"/>
+</div>
+
+Uma aplicação para gerenciar e organizar seus filmes favoritos, permitindo que você mantenha uma lista personalizada dos filmes que mais gosta.<br>
+<br>[Link do Vercel](https://favorites-movies-fzvaxgzeq-marianaeslans-projects.vercel.app/)
 
 ## 📋 Índice
 
